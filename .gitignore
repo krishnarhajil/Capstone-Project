@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+.env
+
+# Generated data
+data/*.csv
+data/*.json
+
+# Keep generated plots out of Git only if they are not needed
+# plots/*.png

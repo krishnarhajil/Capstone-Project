@@ -1,0 +1,14 @@
+﻿{
+  "attack_name": "relay_mitm",
+  "attack_type": "on_path_relay_repeater",
+  "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "relay_forwarding_delay_ms": [0, 50, 100, 250],
+  "attacker_position": "on_path",
+  "forwarding_mode": "delay_only",
+  "tampering_enabled": false,
+  "doppler_manipulation_enabled": false,
+  "random_seed_policy": "reuse_baseline_seeds",
+  "baseline_reference": "no_attack",
+  "delay_metric": "satellite_path_delay_proxy",
+  "notes": "System-level relay abstraction. Added forwarding delay is modeled explicitly; this is not a full UE-to-gNB protocol-stack simulation."
+}

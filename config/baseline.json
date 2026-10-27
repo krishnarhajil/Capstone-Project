@@ -1,0 +1,44 @@
+{
+  "reference_scenario": {
+    "standard": "3GPP TR 38.821 Release 16, LEO Scenario C (transparent payload) used as the reference architecture",
+    "reference_altitude_km": 600,
+    "reference_service_link_frequency_hz": 2000000000,
+    "reference_system_bandwidth_hz": 30000000,
+    "minimum_service_elevation_deg": 10,
+    "target_elevation_for_reference_link_budget_deg": 30,
+    "payload": "transparent",
+    "note": "The orbit geometry is computed from the supplied real TLE. It is not an exact reproduction of the ideal 600 km TR 38.821 orbit. Document this distinction."
+  },
+  "site": {
+    "name": "Chennai",
+    "latitude_deg": 13.0827,
+    "longitude_deg": 80.2707,
+    "altitude_m": 6
+  },
+  "radio": {
+    "carrier_frequency_hz": 2000000000,
+    "bandwidth_hz": 30000000,
+    "satellite_eirp_dbm": 78.8,
+    "ue_antenna_gain_dbi": 0,
+    "additional_fixed_losses_db": 0,
+    "shadowing_sigma_db": 4,
+    "noise_figure_db": 7,
+    "minimum_snr_db": 0,
+    "minimum_elevation_deg": 10,
+    "shadowing_margin_db": 3
+  },
+  "traffic": {
+    "application_rate_mbps": 1.0,
+    "sample_interval_s": 1.0
+  },
+  "handover": {
+    "source_leave_elevation_deg": 15,
+    "target_min_elevation_deg": 10,
+    "time_to_trigger_s": 3,
+    "handover_interruption_s": 1,
+    "minimum_overlap_samples": 3
+  },
+  "experiments": {
+    "seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  }
+}
